@@ -97,7 +97,6 @@ body {
 
 .links { display: flex; flex-direction: column; gap: 12px; }
 .link-row { display: flex; align-items: center; gap: 16px; }
-.link-url { color: var(--ink-soft); font-size: 14px; word-break: break-all; }
 .links a {
   color: var(--ink);
   text-decoration: none;
@@ -109,6 +108,16 @@ body {
   text-align: center;
 }
 .links a:hover { border-color: var(--accent); color: var(--accent); }
+.links a.link-url {
+  color: var(--accent);
+  border: none;
+  padding: 0;
+  min-width: 0;
+  text-align: left;
+  text-decoration: underline;
+  word-break: break-all;
+}
+.links a.link-url:hover { opacity: 0.8; }
 
 .cta {
   display: inline-block;
