@@ -54,5 +54,5 @@ uvicorn app.main:app --reload
 
 ## 배포 주소
 
-- Vercel: (배포 후 작성)
+- Vercel: https://expense-tracker-blond-six-88.vercel.app
 - Render (Swagger UI): https://expense-api-mp1j.onrender.com/docs
