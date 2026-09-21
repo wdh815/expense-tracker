@@ -1,5 +1,4 @@
-// TODO: Render에 배포한 뒤 아래 주소를 실제 배포 주소로 교체하세요 (끝에 '/' 없이)
-const API_BASE = "http://127.0.0.1:8123";
+const API_BASE = "https://expense-api-mp1j.onrender.com";
 
 const apiBaseLabel = document.getElementById("api-base-label");
 const form = document.getElementById("transaction-form");
