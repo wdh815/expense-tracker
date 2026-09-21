@@ -14,7 +14,7 @@
 
   <div class="profile-card">
     <div class="profile-header">
-      <img class="avatar" src="profile.jpg" alt="우동희 프로필 사진">
+      <img class="avatar" id="avatar" src="profile.jpg" alt="우동희 프로필 사진" title="클릭하면 확대됩니다">
       <div>
         <h1>우동희</h1>
         <p class="tagline">Candidate in MFE(Master of Financial Engineering), KAIST </p>
@@ -53,5 +53,19 @@
     <a class="cta" href="demo.html">가계부 API 연동 데모 보러 가기 →</a>
   </div>
 </div>
+
+<div class="lightbox" id="lightbox" hidden>
+  <img src="profile.jpg" alt="우동희 프로필 사진 원본">
+</div>
+
+<script>
+  const avatar = document.getElementById("avatar");
+  const lightbox = document.getElementById("lightbox");
+  avatar.addEventListener("click", () => { lightbox.hidden = false; });
+  lightbox.addEventListener("click", () => { lightbox.hidden = true; });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") lightbox.hidden = true;
+  });
+</script>
 </body>
 </html>
