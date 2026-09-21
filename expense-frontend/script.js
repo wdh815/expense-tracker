@@ -39,7 +39,11 @@ function renderList(items) {
     li.className = `item ${item.type}`;
     const sign = item.type === "income" ? "+" : "-";
     li.innerHTML = `
-      <span class="category">${escapeHtml(item.category)}</span>
+      <span class="category">${escapeHtml(item.category)}${
+        item.description
+          ? `<small class="description">${escapeHtml(item.description)}</small>`
+          : ""
+      }</span>
       <span class="amount">${sign}${Number(item.amount).toLocaleString()}원</span>
       <span class="date">${item.occurred_on}</span>
       <button type="button" class="delete-btn" data-id="${item.id}">삭제</button>

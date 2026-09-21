@@ -212,6 +212,13 @@ ul.tx-list li.empty {
 }
 
 .item .category { flex: 1; font-weight: 600; }
+.item .description {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
 .item .date { color: var(--ink-soft); font-size: 13px; }
 .item.income .amount { color: var(--income); font-weight: 700; }
 .item.expense .amount { color: var(--expense); font-weight: 700; }
