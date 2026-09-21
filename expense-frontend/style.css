@@ -95,7 +95,9 @@ body {
   border-radius: 14px;
 }
 
-.links { display: flex; flex-wrap: wrap; gap: 14px; }
+.links { display: flex; flex-direction: column; gap: 12px; }
+.link-row { display: flex; align-items: center; gap: 16px; }
+.link-url { color: var(--ink-soft); font-size: 14px; word-break: break-all; }
 .links a {
   color: var(--ink);
   text-decoration: none;
@@ -103,6 +105,8 @@ body {
   border: 1px solid var(--line);
   padding: 6px 14px;
   border-radius: 10px;
+  min-width: 84px;
+  text-align: center;
 }
 .links a:hover { border-color: var(--accent); color: var(--accent); }
 
